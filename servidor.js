@@ -34,7 +34,7 @@ async function conectar() {
 server.post('/users', async (req, res) => {
     const { username, password } = req.body;
 
-    const reponse = await client.query(`
+    const response = await client.query(`
         INSERT INTO public.users(
         username, password)
         VALUES ('${username}', '${md5(password)}')

@@ -17,6 +17,6 @@ app.post('login', (req, res) => {
     }
 })
 
-app.listen(port, () => {
-    console.log(`API rodando na porta ${port}`)
+app.listen(PORT, () => {
+    console.log(`API rodando na porta ${PORT}`)
 });
